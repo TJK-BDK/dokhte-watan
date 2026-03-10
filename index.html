@@ -667,21 +667,27 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
 </nav>
 
 <!-- ─── HERO ─── -->
-<section id="hero" style="min-height:100vh;position:relative;display:flex;align-items:center;justify-content:flex-start;padding-top:100px;overflow:hidden;background:#0d0008;">
-  <!-- bg image -->
-  <div style="position:absolute;inset:0;background-image:url('https://i.ibb.co/2Yf6t4m6/Screenshot-2026-03-10-120424.png');background-size:cover;background-position:center right;background-repeat:no-repeat;opacity:0.45;z-index:0;"></div>
-  <!-- overlay -->
-  <div style="position:absolute;inset:0;z-index:1;background:linear-gradient(105deg,rgba(13,0,8,0.97) 0%,rgba(13,0,8,0.88) 38%,rgba(13,0,8,0.4) 65%,rgba(13,0,8,0.05) 100%);"></div>
-  <!-- text -->
-  <div style="position:relative;z-index:2;max-width:600px;padding:0 5vw;" class="hero-content">
-    <div class="hero-tag" style="animation:rise 1s .1s both;">Tajik Persian · Khorasan, Afghanistan</div>
-    <h1 class="hero-title" style="animation:rise 1s .25s both;">Tajikana</h1>
-    <p class="hero-farsi" style="animation:rise 1s .4s both;">&#x062A;&#x0627;&#x062C;&#x06CC;&#x06A9;&#x0627;&#x0646;&#x0647; — Reviving What Is Ours</p>
-    <div class="hero-divider" style="justify-content:flex-start;animation:rise 1s .5s both;"><div class="dl"></div><div class="dl r"></div></div>
-    <p class="hero-desc" style="animation:rise 1s .6s both;">Handmade Tajik Persian dresses rooted in the culture of Khorasan — so Tajik girls can wear their own culture with pride again.</p>
-    <div class="hero-cta" style="animation:rise 1s .75s both;">
-      <a href="#shop" class="btn-pink">Shop the Collection</a>
-      <a href="#about" class="btn-outline-pink">Our Story</a>
+<section id="hero">
+  <div class="hero-blob hero-blob-1"></div>
+  <div class="hero-blob hero-blob-2"></div>
+  <div class="hero-blob hero-blob-3"></div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:4rem;max-width:1100px;margin:0 auto;padding:0 2rem;position:relative;z-index:2;width:100%;">
+    <div class="hero-content" style="flex:1;text-align:left;">
+      <div class="hero-tag" style="animation:rise 1s .1s both;">Tajik Persian · Khorasan, Afghanistan</div>
+      <h1 class="hero-title" style="animation:rise 1s .25s both;">Tajikana</h1>
+      <p class="hero-farsi" style="animation:rise 1s .4s both;">تاجیکانه — Reviving What Is Ours</p>
+      <div class="hero-divider" style="justify-content:flex-start;animation:rise 1s .5s both;"><div class="dl"></div><div class="dl r"></div></div>
+      <p class="hero-desc" style="animation:rise 1s .6s both;">Handmade Tajik Persian dresses rooted in the culture of Khorasan — so Tajik girls can wear their own culture with pride again.</p>
+      <div class="hero-cta" style="animation:rise 1s .75s both;">
+        <a href="#shop" class="btn-pink">Shop the Collection</a>
+        <a href="#about" class="btn-outline-pink">Our Story</a>
+      </div>
+    </div>
+    <div style="flex:0 0 420px;position:relative;animation:rise 1s .4s both;">
+      <img src="https://i.ibb.co/2Yf6t4m6/Screenshot-2026-03-10-120424.png"
+           alt="Tajikana dress"
+           style="width:100%;border-radius:24px;display:block;box-shadow:0 20px 80px rgba(155,34,100,.6),0 0 0 3px rgba(155,34,100,.4);border:2px solid rgba(155,34,100,.5);"/>
+      <div style="position:absolute;inset:-25px;border-radius:35px;background:radial-gradient(ellipse at center,rgba(155,34,100,.3),transparent 70%);z-index:-1;pointer-events:none;"></div>
     </div>
   </div>
   <div class="scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
