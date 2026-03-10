@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dokhte Watan 🌸 Khorasan Tajik Fashion</title>
+<title>Tajikana — Khorasan Tajik Fashion</title>
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Lato:wght@300;400&display=swap" rel="stylesheet">
 <style>
 :root {
-  --pink: #f4a7c0;
-  --pink-deep: #e07a9e;
-  --pink-dark: #c45c80;
-  --blush: #fce8f0;
-  --rose: #f9d0e2;
-  --white: #fffafc;
-  --soft: #fdf4f8;
-  --text: #4a1f35;
-  --text-light: #9b6b80;
-  --accent: #e07a9e;
-  --gold: #d4a8b8;
-  --red: #d64f7a;
+  --pink: #9b2264;
+  --pink-deep: #7a1a50;
+  --pink-dark: #5c1040;
+  --blush: #f9f0f5;
+  --rose: #f2e0eb;
+  --white: #ffffff;
+  --soft: #faf5f8;
+  --text: #1a0a12;
+  --text-light: #6b4060;
+  --accent: #cc1f5a;
+  --gold: #e8388a;
+  --red: #cc1f3a;
 }
 
 * { margin:0; padding:0; box-sizing:border-box; }
@@ -70,7 +70,7 @@ body {
 
 /* ── NAV ── */
 nav {
-  position:fixed; top:0; width:100%; z-index:500;
+  position:fixed; top:18px; width:100%; z-index:500;
   padding:1rem 2.5rem;
   display:flex; align-items:center; justify-content:space-between;
   background: rgba(255,250,252,0.92);
@@ -84,6 +84,7 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(224,122,158,.12); }
   font-family:'Sacramento',cursive;
   font-size:2rem; color:var(--pink-dark); text-decoration:none;
   line-height:1;
+  letter-spacing:.02em;
 }
 .nav-logo span {
   display:block; font-family:'Lato',sans-serif; font-weight:300;
@@ -130,17 +131,17 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(224,122,158,.12); }
 #hero {
   min-height:100vh; position:relative; display:flex;
   align-items:center; justify-content:center; text-align:center;
-  overflow:hidden; padding-top:80px;
-  background: linear-gradient(160deg, #fff5f9 0%, #fce8f0 40%, #fdf0f7 70%, #fff8fb 100%);
+  overflow:hidden; padding-top:100px;
+  background: linear-gradient(160deg, #0d0008 0%, #1a0015 40%, #2a0020 70%, #0d0008 100%);
 }
 
 /* big soft circles */
 .hero-blob {
   position:absolute; border-radius:50%; filter:blur(80px); pointer-events:none;
 }
-.hero-blob-1 { width:600px;height:600px; background:rgba(244,167,192,.25); top:-100px;right:-150px; }
-.hero-blob-2 { width:400px;height:400px; background:rgba(249,208,226,.4); bottom:-80px;left:-100px; }
-.hero-blob-3 { width:300px;height:300px; background:rgba(255,220,235,.3); top:30%;left:60%; }
+.hero-blob-1 { width:600px;height:600px; background:rgba(155,34,100,.3); top:-100px;right:-150px; }
+.hero-blob-2 { width:400px;height:400px; background:rgba(204,31,90,.2); bottom:-80px;left:-100px; }
+.hero-blob-3 { width:300px;height:300px; background:rgba(155,34,100,.15); top:30%;left:60%; }
 
 .hero-flowers {
   position:absolute; inset:0; pointer-events:none; overflow:hidden;
@@ -163,29 +164,29 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(224,122,158,.12); }
 
 .hero-tag {
   display:inline-block;
-  background: linear-gradient(135deg, var(--pink), var(--pink-deep));
+  background: linear-gradient(135deg, var(--pink), var(--accent));
   color:white; padding:.35rem 1.4rem; border-radius:50px;
   font-size:.65rem; letter-spacing:.25em; text-transform:uppercase;
   margin-bottom:2rem; font-weight:400;
   animation: rise 1s .1s both;
-  box-shadow: 0 4px 15px rgba(224,122,158,.3);
+  box-shadow: 0 4px 20px rgba(155,34,100,.5);
 }
 
 .hero-title {
   font-family:'Sacramento',cursive;
   font-size:clamp(4rem,12vw,8.5rem);
-  color:var(--pink-dark);
+  color:#ffffff;
   line-height:.95;
   margin-bottom:.5rem;
   animation:rise 1s .25s both;
-  text-shadow: 0 4px 30px rgba(196,92,128,.2);
+  text-shadow: 0 4px 40px rgba(155,34,100,.8), 0 0 80px rgba(204,31,90,.4);
 }
 
 .hero-farsi {
   font-family:'Playfair Display',serif;
   font-style:italic;
   font-size:clamp(1rem,3vw,1.8rem);
-  color:var(--text-light);
+  color:rgba(255,180,210,.85);
   margin-bottom:1.5rem;
   animation:rise 1s .4s both;
   letter-spacing:.05em;
@@ -199,7 +200,7 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(224,122,158,.12); }
 .hero-divider .dl.r { background:linear-gradient(to left,transparent,var(--pink)); }
 
 .hero-desc {
-  font-size:1.05rem; color:var(--text-light); max-width:420px;
+  font-size:1.05rem; color:rgba(255,210,230,.8); max-width:420px;
   margin:0 auto 2.5rem; line-height:1.85; font-weight:300;
   animation:rise 1s .6s both;
 }
@@ -231,7 +232,7 @@ nav.scrolled { box-shadow: 0 4px 30px rgba(224,122,158,.12); }
 .scroll-hint {
   position:absolute; bottom:2rem; left:50%; transform:translateX(-50%);
   display:flex; flex-direction:column; align-items:center; gap:.5rem;
-  color:var(--text-light); opacity:.5; animation:bob 3s ease-in-out infinite;
+  color:rgba(255,180,210,.6); opacity:.7; animation:bob 3s ease-in-out infinite;
 }
 .scroll-hint span { font-size:.6rem; letter-spacing:.3em; text-transform:uppercase; }
 .scroll-line { width:1px; height:35px; background:linear-gradient(to bottom,var(--pink-deep),transparent); }
@@ -635,6 +636,9 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
 </head>
 <body>
 
+<!-- suzani top border -->
+<div style="width:100%;height:18px;background:repeating-linear-gradient(90deg,#5c1040 0px,#5c1040 8px,#cc1f3a 8px,#cc1f3a 16px,#9b2264 16px,#9b2264 24px,#1a0a12 24px,#1a0a12 32px);position:fixed;top:0;left:0;z-index:9999;"></div>
+
 <!-- falling petals -->
 <div class="petal-container">
   <div class="petal">🌸</div><div class="petal">🌺</div>
@@ -645,8 +649,8 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
 
 <!-- ─── NAV ─── -->
 <nav id="nav">
-  <a href="#hero" class="nav-logo">Dokhte Watan
-    <span>✿ Khorasan Tajik Heritage ✿</span>
+  <a href="#hero" class="nav-logo">Tajikana
+    <span>Tajik Persian · Khorasan · Afghanistan</span>
   </a>
   <ul class="nav-links">
     <li><a href="#shop">Shop</a></li>
@@ -675,19 +679,28 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
     <div class="hero-flower hf5">✿</div>
     <div class="hero-flower hf6">🌺</div>
   </div>
-  <div class="hero-content">
-    <div class="hero-tag">✿ Tajik of Khorasan — Living Tradition ✿</div>
-    <h1 class="hero-title">Dokhte Watan</h1>
-    <p class="hero-farsi">دخت وطن — Daughter of the Homeland</p>
-    <div class="hero-divider">
-      <div class="dl"></div>
-      <span style="font-size:1.2rem">🌸</span>
-      <div class="dl r"></div>
+  <div style="display:flex;align-items:center;justify-content:center;gap:4rem;max-width:1100px;margin:0 auto;padding:0 2rem;position:relative;z-index:2;width:100%;">
+    <div class="hero-content" style="flex:1;text-align:left;">
+      <div class="hero-tag">Tajik Persian · Khorasan, Afghanistan</div>
+      <h1 class="hero-title">Tajikana</h1>
+      <p class="hero-farsi">تاجیکانه — Reviving What Is Ours</p>
+      <div class="hero-divider" style="justify-content:flex-start;">
+        <div class="dl"></div>
+        <span style="font-size:1.2rem">🌸</span>
+        <div class="dl r"></div>
+      </div>
+      <p class="hero-desc">Handmade Tajik Persian dresses rooted in the culture of Khorasan — so Tajik girls can wear their own culture with pride again.</p>
+      <div class="hero-cta">
+        <a href="#shop" class="btn-pink">Shop the Collection</a>
+        <a href="#about" class="btn-outline-pink">Our Story</a>
+      </div>
     </div>
-    <p class="hero-desc">Handcrafted garments rooted in the living culture of the Tajiks of Khorasan — stitched with pride, worn as identity.</p>
-    <div class="hero-cta">
-      <a href="#shop" class="btn-pink">Shop the Collection</a>
-      <a href="#about" class="btn-outline-pink">Our Story</a>
+    <div style="flex:0 0 400px;position:relative;animation:rise 1s .4s both;">
+      <img src="https://i.ibb.co/2Yf6t4m6/Screenshot-2026-03-10-120424.png"
+           alt="Tajikana dress"
+           style="width:100%;border-radius:24px;display:block;box-shadow:0 20px 80px rgba(155,34,100,.6),0 0 0 3px rgba(155,34,100,.4);border:2px solid rgba(155,34,100,.5);"
+      />
+      <div style="position:absolute;inset:-25px;border-radius:35px;background:radial-gradient(ellipse at center,rgba(155,34,100,.3),transparent 70%);z-index:-1;pointer-events:none;"></div>
     </div>
   </div>
   <div class="scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
@@ -695,7 +708,7 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
 
 <!-- ─── BANNER ─── -->
 <div id="banner">
-  <p>✿ &nbsp; Every piece is handmade — no two are exactly alike &nbsp; ✿ &nbsp; Celebrating the Tajiks of Khorasan &nbsp; ✿</p>
+  <p>✿ &nbsp; Reviving Tajikana clothing for weddings, celebrations & every moment that deserves beauty &nbsp; ✿</p>
 </div>
 
 <!-- ─── SHOP ─── -->
@@ -720,8 +733,8 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
     <div class="about-visual fu">
       <div class="about-frame">
         <div class="about-frame-inner">
-          <div class="farsi-big">دخت وطن</div>
-          <p>Daughter of the Homeland</p>
+          <div class="farsi-big">تاجیکانه</div>
+          <p>Tajikana · Khorasan</p>
         </div>
       </div>
       <div class="about-heart ah1">💗</div>
@@ -732,13 +745,13 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
     <div class="about-text fu">
       <span class="sec-tag">✿ Our Story</span>
       <h2>From the Heart of <em>Khorasan</em></h2>
-      <p>Dokhte Watan — "Daughter of the Homeland" — is a one-woman effort to keep the living culture of the Tajiks of Khorasan visible, wearable, and celebrated.</p>
-      <p>Every piece is handmade. The embroidery, the cuts, the colors — all rooted in the traditions of Tajiks of Afghanistan, a people whose culture is too often overlooked or erased.</p>
+      <p>Tajikana — "Daughter of the Homeland" — is a one-woman effort to keep the living culture of the Tajiks of Khorasan visible, wearable, and celebrated.</p>
+      <p>Every piece is handmade. The embroidery, the cuts, the colors — all rooted in the traditions of Afghan Tajiks, a people whose culture is too often overlooked or erased.</p>
       <p>This isn't just fashion. It's resistance, memory, and love — worn on the body.</p>
       <div class="about-stats">
         <div class="stat"><span class="stat-num">100%</span><span class="stat-lbl">Handmade</span></div>
-        <div class="stat"><span class="stat-num">Khorasan</span><span class="stat-lbl">Rooted</span></div>
-        <div class="stat"><span class="stat-num">Tajik</span><span class="stat-lbl">Identity</span></div>
+        <div class="stat"><span class="stat-num">Khorasan</span><span class="stat-lbl">Afghanistan</span></div>
+        <div class="stat"><span class="stat-num">Tajik</span><span class="stat-lbl">Persian Roots</span></div>
       </div>
     </div>
   </div>
@@ -752,9 +765,9 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
     <div class="sec-rule"><div class="rl"></div><div class="dot"></div><div class="rl rv"></div></div>
   </div>
   <div class="craft-grid">
-    <div class="craft-item fu"><span class="craft-icon">🧵</span><h3>Made by Hand</h3><p>Every piece is sewn, embroidered, and finished by hand — no factory, no shortcuts. Just craft and patience.</p></div>
-    <div class="craft-item fu"><span class="craft-icon">🌸</span><h3>Khorasan Patterns</h3><p>The motifs, stitches, and silhouettes come directly from Tajik tradition — a visual language passed through generations.</p></div>
-    <div class="craft-item fu"><span class="craft-icon">🌺</span><h3>Culture, Not Costume</h3><p>These garments are meant to be worn with meaning — a living connection to the Tajik identity of Khorasan.</p></div>
+    <div class="craft-item fu"><span class="craft-icon">🧵</span><h3>Made by Hand</h3><p>Every piece is sewn, embroidered, and finished by hand. No factory, no shortcuts — just craft, patience, and love for the culture.</p></div>
+    <div class="craft-item fu"><span class="craft-icon">🌸</span><h3>Khorasan Patterns</h3><p>The embroidery, motifs, and silhouettes are drawn from Tajik Persian tradition — a visual language carried through generations of Khorasan.</p></div>
+    <div class="craft-item fu"><span class="craft-icon">🌺</span><h3>Culture, Not Costume</h3><p>Tajikana exists so Tajik girls never have to choose between fitting in and honoring where they come from. Wear your roots with pride.</p></div>
   </div>
 </section>
 
@@ -791,16 +804,16 @@ footer { background:var(--text); padding:3.5rem 2rem 2rem; }
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <span class="logo-t">Dokhte Watan</span>
-        <p>Handmade garments celebrating the living culture and identity of the Tajiks of Khorasan — made with love, worn with pride. 🌸</p>
+        <span class="logo-t">Tajikana</span>
+        <p>Reviving Tajik Persian clothing from Khorasan, Afghanistan. Made by hand, worn with pride. Because our culture deserves to be seen. 🌸</p>
         <div class="social-links"><a href="#" class="social-link">📸</a><a href="#" class="social-link">✉</a></div>
       </div>
       <div class="footer-col"><h4>Navigate</h4><ul><li><a href="#shop">Shop</a></li><li><a href="#about">Our Story</a></li><li><a href="#craft">The Craft</a></li><li><a href="#contact">Contact</a></li></ul></div>
       <div class="footer-col"><h4>Policies</h4><ul><li><a href="#">Shipping Info</a></li><li><a href="#">Returns</a></li><li><a href="#">Size Guide</a></li><li><a href="#">Care Instructions</a></li></ul></div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Dokhte Watan. All rights reserved.</p>
-      <p class="footer-tag">🌸 Every thread tells a story 🌸</p>
+      <p>© 2025 Tajikana_. All rights reserved.</p>
+      <p class="footer-tag">🌸 Our culture deserves to be seen 🌸</p>
     </div>
   </div>
 </footer>
@@ -1067,7 +1080,7 @@ function toggleCart(forceOpen) {
   if (forceOpen === true || !d.classList.contains('open')) { d.classList.add('open'); o.classList.add('open'); }
   else { d.classList.remove('open'); o.classList.remove('open'); }
 }
-function checkout() { alert('To place your order, please reach out via the Contact form or DM on Instagram @dokhte_watan 🌸'); }
+function checkout() { alert('To place your order, please reach out via the Contact form or DM on Instagram @tajikana_ 🌸'); }
 
 function submitForm() {
   const n = document.getElementById('fname').value, e = document.getElementById('femail').value, m = document.getElementById('fmessage').value;
